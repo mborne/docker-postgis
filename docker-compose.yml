@@ -22,4 +22,4 @@ volumes:
 networks:
   default:
     external:
-      name: webgateway
+      name: devbox
