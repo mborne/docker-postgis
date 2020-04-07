@@ -2,7 +2,7 @@
 
 ## Description
 
-Docker container running postgresql 10.5 with postgis 2.4 and pgrouting.
+Docker container running postgresql 9.6 with postgis 2.4 and pgrouting.
 
 ## Usage
 
