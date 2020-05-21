@@ -9,8 +9,8 @@ services:
     ports:
       - "127.0.0.1:5432:5432"
     environment:
-      - POSTGRES_USER=postgis
-      - POSTGRES_PASSWORD=postgis
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     volumes:
       - postgis-data:/var/lib/postgresql/data
     restart: unless-stopped
