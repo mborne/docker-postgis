@@ -1,8 +1,6 @@
-# postgis
+# docker-postgis
 
-## Description
-
-Docker container running postgresql 10.5 with postgis 2.4
+Docker image running [PostgreSQL](https://hub.docker.com/_/postgres) with postgis and pgrouting extensions.
 
 ## Usage
 
@@ -10,7 +8,7 @@ Docker container running postgresql 10.5 with postgis 2.4
 
 * Configure environment (`~/.profile`)
 
-```
+```bash
 export PGHOST=localhost
 export PGUSER=postgis
 export PGPASSWORD=postgis
@@ -18,7 +16,7 @@ export PGPASSWORD=postgis
 
 * Create gis database
 
-```
+```bash
 createdb gis
 psql -d gis -c "CREATE EXTENSION postgis"
 ```

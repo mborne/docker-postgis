@@ -4,13 +4,13 @@ services:
 
   postgis:
     container_name: postgis
-    image: postgis:10.5-2.4
+    image: mborne/postgis:10.5-2.4
     build: .
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5432:5432"
     environment:
-      - POSTGRES_USER=postgis
-      - POSTGRES_PASSWORD=postgis
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     volumes:
       - postgis-data:/var/lib/postgresql/data
     restart: unless-stopped
@@ -22,4 +22,4 @@ volumes:
 networks:
   default:
     external:
-      name: webgateway
+      name: devbox
