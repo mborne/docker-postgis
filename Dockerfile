@@ -1,8 +1,6 @@
-FROM postgres:10.5
+FROM postgres:12.3
 
 RUN apt-get update \
- && apt-get install -y postgresql-10-postgis-2.4 \
- && apt-get install -y postgresql-10-pgrouting \
+ && apt-get install -y postgresql-12-postgis-2.4 \
+ && apt-get install -y postgresql-12-pgrouting \
  && rm -rf /var/lib/apt/lists/*
-
-COPY set-config.sh /docker-entrypoint-initdb.d/set-config.sh
