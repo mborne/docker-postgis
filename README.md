@@ -1,8 +1,6 @@
-# postgis
+# docker-postgis
 
-## Description
-
-Docker container running postgresql 10.5 with postgis 2.4 and pgrouting.
+Docker image running [PostgreSQL](https://hub.docker.com/_/postgres) with postgis and pgrouting extensions.
 
 ## Usage
 
