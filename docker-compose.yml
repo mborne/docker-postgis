@@ -4,7 +4,7 @@ services:
 
   postgis:
     container_name: postgis
-    image: docker.pkg.github.com/mborne/docker-postgis/postgis:12.3-2.4
+    image: docker.pkg.github.com/mborne/docker-postgis/postgis:13.3-3.1
     build: .
     ports:
       - "127.0.0.1:5432:5432"
@@ -17,7 +17,7 @@ services:
 
 volumes:
   postgis-data:
-    name: postgis-data
+    name: postgis-data-13
 
 networks:
   default:

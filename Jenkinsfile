@@ -7,7 +7,7 @@ pipeline {
                 script {
                     docker.withRegistry("${DOCKER_REGISTRY_URL}", "${DOCKER_REGISTRY_CREDENTIAL_ID}") {
                         def app = docker.build('mborne/postgis')
-                        app.push("12.3-2.4")
+                        app.push("13.3-3.1")
                     }
                 }
             }
