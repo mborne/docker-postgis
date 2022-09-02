@@ -1,5 +1,9 @@
 # docker-postgis
 
+**ARCHIVÉ : Il y a désormais une image publique [postgis/postgis](https://hub.docker.com/r/postgis/postgis)**
+
+## Description
+
 Docker image running [PostgreSQL](https://hub.docker.com/_/postgres) with postgis and pgrouting extensions.
 
 ## Usage
