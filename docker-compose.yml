@@ -4,7 +4,7 @@ services:
 
   postgis:
     container_name: postgis
-    image: ghcr.io/mborne/postgis:v13.3-3.1
+    image: ghcr.io/mborne/postgis:v13.8-3.1
     build: .
     ports:
       - "5432:5432"
