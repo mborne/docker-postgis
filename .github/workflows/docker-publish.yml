@@ -13,8 +13,7 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: mborne/postgis
-
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   build:
@@ -60,7 +59,7 @@ jobs:
         uses: docker/build-push-action@ac9327eae2b366085ac7f6a2d02df8aa8ead720a
         with:
           context: .
-          platforms: linux/arm/v7,linux/arm64/v8,linux/amd64
+          #platforms: linux/arm/v7,linux/arm64/v8,linux/amd64
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
