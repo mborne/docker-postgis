@@ -1,4 +1,4 @@
-FROM postgres:13.3
+FROM postgres:13.8
 
 RUN apt-get update \
  && apt-get install -y postgresql-10-postgis-3 \
