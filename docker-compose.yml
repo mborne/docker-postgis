@@ -4,8 +4,8 @@ services:
 
   postgis:
     container_name: postgis
-    image: ghcr.io/mborne/postgis:v13.8-3.1
-    build: .
+    image: ghcr.io/mborne/postgis:14-3
+    build: img/14-3
     ports:
       - "5432:5432"
     environment:
@@ -17,7 +17,7 @@ services:
 
 volumes:
   postgis-data:
-    name: postgis-data-13
+    name: postgis-data-14
 
 networks:
   default:
