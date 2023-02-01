@@ -61,8 +61,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: img/${{ matrix.version }}
-          #context: img/${{ matrix.version }}/Dockerfile
-          #platforms: linux/arm/v7,linux/arm64/v8,linux/amd64
+          #platforms: linux/arm/v7,linux/amd64
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ matrix.version }}
           labels: ${{ steps.meta.outputs.labels }}
