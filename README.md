@@ -32,3 +32,6 @@ See :
 * [pgtune.leopard.in.ua](http://pgtune.leopard.in.ua/)
 * [urator.cybertec.at](http://pgconfigurator.cybertec.at/)
 
+## License
+
+[MIT](LICENSE)
